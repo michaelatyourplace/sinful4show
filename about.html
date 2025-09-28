@@ -6,7 +6,6 @@
     <title>About | Sinful4Show</title>
     <meta name="description" content="Learn about Sinful4Show—private party entertainment, unforgettable shows, and a stress-free booking experience." />
 
-    <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,50 +14,78 @@
     />
 
     <style>
-      body { background: #0b0b0d; }
+      body {
+        background: #0b0b0d;
+      }
       .brand-gradient {
-        background: radial-gradient(60% 80% at 50% 10%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 60%),
-                    linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0) 40%);
+        background: radial-gradient(60% 80% at 50% 10%, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 60%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 40%);
       }
       .glass {
-        background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,255,255,0.08);
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
         backdrop-filter: blur(6px);
       }
       .section-title span {
-        display:inline-block; padding: .15rem .6rem; border:1px solid rgba(255,255,255,.15); border-radius:999px; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; opacity:.9;
+        display: inline-block;
+        padding: 0.15rem 0.6rem;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 999px;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.9;
       }
-      .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.4); }
-      .icon-badge { width: 42px; height: 42px; border-radius: 50%; display:grid; place-items:center; }
-      .divider { height:1px; background: linear-gradient(90deg, rgba(255,255,255,.0), rgba(255,255,255,.15), rgba(255,255,255,.0)); }
+      .shadow-soft {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+      .icon-badge {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+      }
+      .divider {
+        height: 1px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+      }
     </style>
   </head>
   <body class="text-light">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-secondary sticky-top" style="background:#0f0f12;">
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-secondary sticky-top" style="background: #0f0f12">
       <div class="container">
         <a class="navbar-brand fw-semibold" href="#">Sinful4Show</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample" aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample"
+          aria-controls="navbarsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExample">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-             </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Hero -->
     <header class="py-5 brand-gradient border-bottom border-secondary">
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-lg-7">
             <div class="section-title mb-3"><span>About Us</span></div>
             <h1 class="display-5 fw-bold">We create unforgettable private party shows—tasteful, high‑energy, and tailored to you.</h1>
-            <p class="lead text-secondary">Sinful4Show is a boutique entertainment team specializing in private parties and special events. From bachelorettes and birthdays to milestone celebrations, we deliver professional performers, smooth coordination, and a classy vibe from first click to final encore.</p>
+            <p class="lead text-secondary">
+              Sinful4Show is a boutique entertainment team specializing in private parties and special events. From bachelorettes and birthdays to milestone celebrations, we deliver professional performers, smooth coordination, and a classy vibe from first click to final encore.
+            </p>
             <div class="d-flex gap-3 mt-3">
               <a href="#contact" class="btn btn-primary btn-lg">Check Availability</a>
               <a href="#story" class="btn btn-outline-light btn-lg">Our Story</a>
@@ -67,7 +94,13 @@
           <div class="col-lg-5">
             <div class="glass rounded-4 p-4 shadow-soft">
               <div class="d-flex align-items-center gap-3">
-                <div class="icon-badge bg-primary bg-opacity-25 border border-primary border-opacity-50"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16"><path d="M7.5.25a.75.75 0 0 1 .69.46l.88 2.1 2.28.18a.75.75 0 0 1 .43 1.31L9.9 5.85l.6 2.2a.75.75 0 0 1-1.16.84L7.5 7.8 5.66 8.9a.75.75 0 0 1-1.16-.84l.6-2.2-1.88-1.55a.75.75 0 0 1 .43-1.31l2.28-.18.88-2.1A.75.75 0 0 1 7.5.25Z"/></svg></div>
+                <div class="icon-badge bg-primary bg-opacity-25 border border-primary border-opacity-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path
+                      d="M7.5.25a.75.75 0 0 1 .69.46l.88 2.1 2.28.18a.75.75 0 0 1 .43 1.31L9.9 5.85l.6 2.2a.75.75 0 0 1-1.16.84L7.5 7.8 5.66 8.9a.75.75 0 0 1-1.16-.84l.6-2.2-1.88-1.55a.75.75 0 0 1 .43-1.31l2.28-.18.88-2.1A.75.75 0 0 1 7.5.25Z"
+                    />
+                  </svg>
+                </div>
                 <div>
                   <h5 class="mb-1">Private Party Pros</h5>
                   <p class="mb-0 text-secondary">Discreet booking, punctual performers, and curated set lists for every crowd.</p>
@@ -86,13 +119,14 @@
       </div>
     </header>
 
-    <!-- Mission -->
     <section id="mission" class="py-5">
       <div class="container">
         <div class="row justify-content-between align-items-center g-4">
           <div class="col-lg-6">
             <h2 class="fw-bold mb-3">Our Mission</h2>
-            <p class="fs-5 text-secondary">To make premium entertainment simple, safe, and spectacular for private parties. We combine choreography, personality, and polished production values to create memorable, photo‑worthy moments—without crossing your boundaries or the venue’s rules.</p>
+            <p class="fs-5 text-secondary">
+              To make premium entertainment simple, safe, and spectacular for private parties. We combine choreography, personality, and polished production values to create memorable, photo‑worthy moments—without crossing your boundaries or the venue’s rules.
+            </p>
             <div class="row g-3 mt-3">
               <div class="col-md-6">
                 <div class="glass rounded-4 p-3 h-100">
@@ -117,14 +151,15 @@
 
     <div class="divider my-2"></div>
 
-    <!-- Story -->
     <section id="story" class="py-5">
       <div class="container">
         <div class="row g-4 align-items-center">
           <div class="col-lg-5 order-lg-2">
             <div class="glass rounded-4 p-4">
               <h3 class="fw-bold">How Sinful4Show Began</h3>
-              <p class="text-secondary">Our founders started as performers and producers who saw the same problem again and again: private party entertainment was either underwhelming or over‑the‑top. Sinful4Show was built to strike the perfect balance—<em>classy, energetic, and guest‑friendly</em>—delivered by dependable pros.</p>
+              <p class="text-secondary">
+                Our founders started as performers and producers who saw the same problem again and again: private party entertainment was either underwhelming or over‑the‑top. Sinful4Show was built to strike the perfect balance—<em>classy, energetic, and guest‑friendly</em>—delivered by dependable pros.
+              </p>
               <ul class="list-unstyled text-secondary mb-0">
                 <li class="mb-2">• Handpicked talent with real stage experience</li>
                 <li class="mb-2">• Rehearsed routines designed for living rooms & venues</li>
@@ -134,26 +169,109 @@
           </div>
           <div class="col-lg-7 order-lg-1">
             <div class="row g-3">
-              <div class="col-6"><img class="img-fluid rounded-4 shadow-soft" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1200&auto=format&fit=crop" alt="Performer backstage" /></div>
-              <div class="col-6"><img class="img-fluid rounded-4 shadow-soft" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200&auto=format&fit=crop" alt="Party lights" /></div>
+              <div class="col-6">
+                <img class="img-fluid rounded-4 shadow-soft" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1200&auto=format&fit=crop" alt="Performer backstage" />
+              </div>
+              <div class="col-6">
+                <img class="img-fluid rounded-4 shadow-soft" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200&auto=format&fit=crop" alt="Party lights" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Values -->
     <section id="values" class="py-5">
       <div class="container">
         <h2 class="fw-bold mb-4">What We Stand For</h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-3">
             <div class="glass rounded-4 p-4 h-100">
-              <div class="icon-badge bg-success bg-opacity-25 border border-success border-opacity-50 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16"><path d="M5.338 1.59a1.5 1.5 0 0 1 1.263-.27l1.77.394 1.77-.394a1.5 1.5 0 0 1 1.263.27l1.76 1.175a1.5 1.5 0 0 1 .676 1.234V7.5c0 2.828-1.95 5.658-5.91 7.285a.75.75 0 0 1-.596 0C3.19 13.158 1.24 10.328 1.24 7.5V4a1.5 1.5 0 0 1 .676-1.234L3.676 1.59Z"/><path d="m10.97 5.97-3.99 3.99L4.97 8.95l1.06-1.06 1.95 1.95 2.93-2.93z"/></svg></div>
+              <div class="icon-badge bg-success bg-opacity-25 border border-success border-opacity-50 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                  <path d="M5.338 1.59a1.5 1.5 0 0 1 1.263-.27l1.77.394 1.77-.394a1.5 1.5 0 0 1 1.263.27l1.76 1.175a1.5 1.5 0 0 1 .676 1.234V7.5c0 2.828-1.95 5.658-5.91 7.285a.75.75 0 0 1-.596 0C3.19 13.158 1.24 10.328 1.24 7.5V4a1.5 1.5 0 0 1 .676-1.234L3.676 1.59Z" />
+                  <path d="m10.97 5.97-3.99 3.99L4.97 8.95l1.06-1.06 1.95 1.95 2.93-2.93z" />
+                </svg>
+              </div>
               <h5>Safety & Respect</h5>
               <p class="text-secondary">Consent‑driven interactions and clear boundaries for guests and performers.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="glass rounded-4 p-4 h-100">
-              <div class="icon-badge bg-info bg-opacity-25 border border-info border-opacity-50 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16"><path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2S6 11.895 6 13z"/><path fill-rul
+              <div class="icon-badge bg-info bg-opacity-25 border border-info border-opacity-50 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                  <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.895 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
+                  <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                  <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                </svg>
+              </div>
+              <h5>Artistry & Energy</h5>
+              <p class="text-secondary">High-energy shows and polished choreography that captivates any audience.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="glass rounded-4 p-4 h-100">
+              <div class="icon-badge bg-warning bg-opacity-25 border border-warning border-opacity-50 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.9 3.6a.5.5 0 0 1 0 .6l-2.9 3.6a.5.5 0 0 1-.4.2h-9a.5.5 0 0 1-.4-.2L.2 4.9a.5.5 0 0 1 0-.6l2.9-3.6zm1.4 3.3L8 7.2l3.5-3.2L9.9 1H6.1l-1.6 3zM8 8.2l-3.5 3.2h7L8 8.2z" />
+                </svg>
+              </div>
+              <h5>Quality & Polish</h5>
+              <p class="text-secondary">Every detail, from costuming to song choice, is curated for a premium feel.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="glass rounded-4 p-4 h-100">
+              <div class="icon-badge bg-danger bg-opacity-25 border border-danger border-opacity-50 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-heart" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2Zm-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a.5.5 0 0 1 .052.052c.07.086.15.169.232.246.082.078.167.15.25.218.085.068.167.13.25.187.085.058.167.107.25.153.085.046.167.085.25.118a1 1 0 0 1 .042.02c.07.028.14.05.21.068.07.02.14.03.21.038.07.007.138.01.207.012a.5.5 0 0 1 .053.002z"
+                  />
+                  <path d="M8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132z" />
+                </svg>
+              </div>
+              <h5>Client-First Experience</h5>
+              <p class="text-secondary">We're here to make you the hero of your party with a seamless, stress-free process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="glass rounded-4 p-5 text-center shadow-soft">
+          <h2 class="display-6 fw-bold">Ready to book an unforgettable show?</h2>
+          <p class="lead text-secondary mt-3 mb-4">Let's check availability for your date and create the perfect entertainment package for your event.</p>
+          <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4">
+          <p class="text-secondary">&copy; 2025 Sinful4Show. All rights reserved.</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#" class="link-secondary">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#" class="link-secondary">Terms of Service</a></li>
+            <li class="list-inline-item"><a href="#" class="link-secondary">FAQ</a></li>
+            <li class="list-inline-item"><a href="https://theknot-hms.s3.us-east-2.amazonaws.com/index.html" class="link-secondary">Blog 1</a></li>
+            <li class="list-inline-item"><a href="https://msfh-theknot.s3.us-east-2.amazonaws.com/index.html" class="link-secondary">Vlog 2</a></li>
+            <li class="list-inline-item"><a href="https://msnm-theknot.s3.us-east-2.amazonaws.com/index.html" class="link-secondary">Blog 3</a></li>
+            <li class="list-inline-item"><a href="https://fb-theknot.s3.us-east-2.amazonaws.com/index.html" class="link-secondary">Blog 4</a></li>         
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
